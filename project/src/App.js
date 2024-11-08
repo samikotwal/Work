@@ -1,5 +1,6 @@
 import React from "react";
-import Counter from "./Component/Counter";
+
+/*import Counter from "./Component/Counter";*/
 /*import Task from "./Component/Task";*/
 
 /*function App(){
@@ -16,10 +17,10 @@ import Counter from "./Component/Counter";
 
 export default App;
 
-function App(){
+/*function App(){
   return(
     <div>
       <Counter/>
     </div>
   );
-}
+}*/
