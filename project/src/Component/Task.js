@@ -1,60 +1,11 @@
-import react from "react";
+import React from "react";
 
-function Task(props){
+function Task(Props){
     return(
         <div>
-            <input type="checkbox" defaultChecked={props.completed}/>
-            <span>{props.text}</span>
-         </div>
-    );
+            <input type="checkbox"defaultChecked={Props.completed}/>
+            <span>{Props.text}</span>
+        </div>
+    )
 }
 export default Task;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*import react from 'react';
-
-function Task (props){  
-    return(
-        <div>
-            <input type = "checkbox" defaultChecked={props.completed}/>
-            <span>{props.text}</span>
-        </div>
-    );
-
-}
-export default Task;*/

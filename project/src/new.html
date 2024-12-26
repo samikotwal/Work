@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Submitionform(){
+         const registernumber = document.regform.registernumber.value;
+         const name = document.regform.name.value;
+         const email = document.regform.email.value;
+         const Phonenumber = document.regform.Phonenumber.value;
+        document.getElementById('registerform').style.display='none'
+
+        document.getElementById('result').innerHTML=`
+        <table border = "3" style="text-align:center;margin-top:20px">
+            <tr>
+                <th>registernumber</th>
+                <th>name</th>
+                <th>email</th>
+                <th>Phonenumber</th>
+                </tr>
+                <tr>
+                    <td>${registernumber}</td>
+                    <td>${name}</td>
+                    <td>${email}</td>
+                    <td>${Phonenumber}</td>
+                    </tr>
+                    </table>
+                    <p> correct</p>
+
+        `
+
+        }
+    </script>
+</head>
+<body>
+    <form id="registerform" name="regform"><br/><br/>
+        <label for="registernumber">registernumber</label>
+        <input type="text" id="registernumber" name="registernumber" value=""><br/><br/>
+
+        <label for="name">name</label>
+        <input type="text" id="name" name="name" value=""><br/><br/>
+
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" value=""><br/><br/>
+
+        <label for="Phonenumber">phonenumber</label>
+        <input type="number" id="Phonenumber" name="Phonenumber" value=""><br/><br/>
+        <input type="button" value="submit" onClick="Submitionform()"/>
+    </form>
+    <div id="result"></div>
+    
+</body>
+</html>

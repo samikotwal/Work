@@ -1,12 +1,12 @@
 import React from "react";
 import ChildC from "./ChildC";
 
-const ChildB = () =>{
+const ChildB = () => {
     return(
         <div>
-            <h2>ChildB</h2>
+            <h2>Hello sami</h2>
             <ChildC/>
         </div>
-    );
+    )
 }
 export default ChildB;

@@ -1,16 +1,14 @@
-import React, { useContext } from "react";
-import { Mycontext } from "../App";
+import React,{useContext} from "react";
+import App,{Mycontext} from "../App"
 
 const ChildC = () => {
-
-    const contextValue = useContext(Mycontext)
+    const contextValue = useContext(Mycontext);
 
     return(
         <div>
-            <h3>ChildC</h3>
+            <h3>Hello sami</h3>
             <p>{contextValue}</p>
         </div>
     )
 }
-
 export default ChildC
